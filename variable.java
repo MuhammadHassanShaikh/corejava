@@ -2949,3 +2949,47 @@ void main() {
     ),
   );
 }
+
+    
+//****************************************************************************SCAFFOLD***********************************    
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MyApp3(),
+  );
+}
+
+class MyApp3 extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return MyApp3State();
+  }
+}
+
+class MyApp3State extends State<MyApp3> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text('Hassan'),
+          ),
+          body: Center(child: Text('Hello')),
+          floatingActionButton: FloatingActionButton(
+            child: Icon(Icons.add),
+            onPressed: () {},
+          ),
+          bottomNavigationBar: BottomNavigationBar(
+            items: [
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+              BottomNavigationBarItem(icon: Icon(Icons.add_chart), label: 'chart'),
+            ],
+          ),
+          backgroundColor: Colors.grey,
+          drawer: Drawer(
+            child: Text('Hassan'),
+          )),
+    );
+  }
+}
