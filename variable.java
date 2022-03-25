@@ -3046,3 +3046,25 @@ void main() {
 //   ),);
 // }
 
+********************************************************APPBAR*****************************************************************
+    import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          actions: [Icon(Icons.more_vert)],
+        ),
+        body: Center(
+        child: Container(
+          child: Text('hassan'),
+          color: Colors.orange,
+          padding: EdgeInsets.all(25),
+        ),          
+        ),
+      ),
+    ),
+  );
+}
